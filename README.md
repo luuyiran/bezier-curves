@@ -13,7 +13,7 @@
  * 按住鼠标左键拖动控制点(有BUG).
  * 空格键屏幕将清空.
 
-编译额好的二进制放在了 `Releases` 界面.
+编译额好的二进制放在了 [`Releases`](https://github.com/luuyiran/bezier-curves/releases/tag/v0.1) 界面.
 
 一起来玩一玩吧！
 
@@ -25,7 +25,7 @@
 
 ----------------------
 
-贝塞尔的更多知识：
+贝塞尔曲线的更多知识：
 
 1. [Wikipedia Bézier curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve).
 2. [A Primer on Bézier Curves](https://pomax.github.io/bezierinfo/).
