@@ -10,7 +10,7 @@
 
 ### 操作说明
  * 点击鼠标右键，在鼠标位置将创建新的控制点.
- * 按住鼠标左键拖动控制点(有BUG).
+ * 按住鼠标左键拖动控制点.
  * 空格键屏幕将清空.
 
 编译额好的二进制放在了 [`Releases`](https://github.com/luuyiran/bezier-curves/releases/tag/v0.2) 界面.
