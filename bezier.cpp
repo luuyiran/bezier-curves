@@ -75,13 +75,13 @@ void bezierLevelPoints(vector<vector<Point>>& levels, double t) {
 // 处理输入事件
 void processInput() {
 	ExMessage msg;
-	if (peekmessage(&msg, EM_MOUSE | EM_KEY)) {
+	while (peekmessage(&msg, EM_MOUSE | EM_KEY)) {
 		// 按住左键拖动控制点
 		if (WM_MOUSEMOVE == msg.message && msg.lbutton) {
 			for (auto& p : controlPoints) {
 				int dx = (int)p.x - msg.x;
 				int dy = (int)p.y - msg.y;
-				if (dx * dx + dy * dy < 50) {
+				if (dx * dx + dy * dy < 500) {
 					p.x = msg.x;
 					p.y = msg.y;
 				}
@@ -157,7 +157,7 @@ int main() {
 		outtextxy(0, 48, buf);
 		swprintf_s(buf, _T("  time: %.0fms"), 1000 * deltaTime);
 		outtextxy(0, 64, buf);
-		swprintf_s(buf, _T("  fps: %d\n"), (int)(1.f / deltaTime));
+		swprintf_s(buf, _T("  fps: %d"), (int)(1.f / deltaTime));
 		outtextxy(0, 80, buf);
         FlushBatchDraw();
     }
